@@ -41,7 +41,7 @@ const Nav = ({openNav}:props) => {
           {
             NavLinks.map((link) => {
               return <ScrollLink smooth={true} to={link.url.replace("#", "")} duration={400} offset={-80}  key={link.id} >
-                <p className="relative text-white text-base font-medium w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-yellow-300 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition-all duration-300 after:origin-left">{link.label}</p>
+                <p className="relative text-white text-base font-medium w-fit cursor-pointer block after:block after:content-[''] after:absolute after:h-[3px] after:bg-yellow-300 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition-all duration-300 after:origin-left">{link.label}</p>
               </ScrollLink>
             })
           }

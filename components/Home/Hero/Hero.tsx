@@ -4,7 +4,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div className='relative w-full h-[120vh] sm:h-[100vh]'>
+    <div className='relative w-full h-[120vh] sm:h-[100vh]' id="home">
         {/* Overlay */}
         <div className='absolute w-full h-full top-0 left-0 bg-gray-800 opacity-70'></div>
         {/* Video */}

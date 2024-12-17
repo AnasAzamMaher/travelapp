@@ -4,7 +4,7 @@ import WhyChooseCard from './WhyChooseCard'
 
 const WhyChoose = () => {
   return (
-    <div className='py-10'>
+    <div className='py-10' id='whychoose'>
         {/* Section Heading */}
         <SectionHeading heading='Why Choose Us' subheading='Our best' />
         <div className='w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-center mt-10'>

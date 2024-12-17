@@ -4,7 +4,7 @@ import DestinationSlider from './DestinationSlider'
 
 const Destination = () => {
   return (
-    <div className='pt-20 pb-20'>
+    <div className='pt-20 pb-20' id='destination'>
         {/* Section Heading */}
         <SectionHeading heading='Exploring Popular Destination' subheading="Must Visit and Explore the latest Popular Destination." />
         {/* Section Content */}

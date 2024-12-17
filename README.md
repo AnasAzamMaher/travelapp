@@ -6,13 +6,20 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+
+## What I Used
+- Next Js
+- Typescript
+- Tailwind CSS
+- React icons
+- React Multi Carousel
+- Swiper
+- aos
+
+## Basic Knowledge
+- React Js
+- HTML, CSS
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

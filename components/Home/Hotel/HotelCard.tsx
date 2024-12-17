@@ -10,7 +10,7 @@ type props = {
         location: string;
         rating: number;
         reviews: string;
-        price: number;
+        price: string;
     };
 };
 
@@ -36,17 +36,20 @@ const HotelCard = ({ hotelsdata }: props) => {
                 />
             </div>
             {/* Content */}
-            <div className="p-4">
+            <div className="px-2 py-4">
                 <h1 className="text-lg font-semibold text-blue-950 hover:text-black transition-all duration-300 truncate">
                     {hotelsdata.name}
                 </h1>
                 <p className="text-sm text-gray-500 mt-1">{hotelsdata.location}</p>
-                <div className="flex items-center mt-3 space-x-2">
-                    <div className="bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded-md">
-                        {hotelsdata.rating}
+                <div className="flex justify-between items-center mt-3 ">
+                    <div className='flex gap-1 items-center'>
+
+                        <div className="bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded-md">
+                            {hotelsdata.rating}
+                        </div>
+                        <p className="text-sm text-gray-700">Exceptional</p>
                     </div>
-                    <p className="text-sm text-gray-700">Exceptional</p>
-                    <p className="text-sm font-semibold text-gray-400">({hotelsdata.reviews} reviews)</p>
+                    <p className="text-sm font-semibold m-0 text-gray-400">({hotelsdata.reviews} reviews)</p>
                 </div>
             </div>
             {/* Price */}

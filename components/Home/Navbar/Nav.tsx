@@ -12,6 +12,12 @@ type props = {
 const Nav = ({openNav}:props) => {
   const [navBg, setNavBg] = useState(false)
 
+  const handleClick=(link)=>{
+    const id = link.split("#").join('')
+    const elem = document.getElementById(id)
+    elem?.scrollIntoView( {block: "center", inline: "nearest",behavior: "smooth"})
+  }
+
   useEffect(() => {
     const handler = () => {
       if(window.scrollY >=90) setNavBg(true)
@@ -38,7 +44,7 @@ const Nav = ({openNav}:props) => {
         <div className='hidden lg:flex items-center space-x-10'>
           {
             NavLinks.map((link) => {
-              return <Link href={link.url} key={link.id}>
+              return <Link href={link.url} key={link.id} scroll={false} onClick={()=>handleClick(link.url)}>
                 <p className="relative text-white text-base font-medium w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-yellow-300 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition-all duration-300 after:origin-left">{link.label}</p>
               </Link>
             })

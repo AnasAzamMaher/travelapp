@@ -15,7 +15,7 @@ npm run dev
 - React icons
 - React Multi Carousel
 - Swiper
-- aos
+- aos 
 
 ## Basic Knowledge
 - React Js
